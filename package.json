@@ -1,0 +1,20 @@
+{
+  "name": "adobe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "assert": "^1.4.1",
+    "bignumber.js": "^7.1.0",
+    "chai": "^4.1.2",
+    "fs": "0.0.1-security",
+    "mocha": "^5.2.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
