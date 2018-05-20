@@ -3,13 +3,13 @@ const BigNumber = require('bignumber.js');
 /**
  * We can easily verify that none of the entries in the first seven rows of Pascal's triangle are divisible by 7:
  *
- *                           	 	 	 	 	 	 1
- *                           	 	 	 	 	 1 	 1
- *                           	 	 	 	 1 	 2 	 1
- *                           	 	 	 1 	 3 	 3 	 1
- *                           	 	 1 	 4 	 6 	 4 	 1
- *                           	 1 	 5 	10 	10 	 5 	 1
- *                           1	 6 	15 	20 	15 	 6 	 1
+ *                                       1
+ *                                     1   1
+ *                                   1   2   1
+ *                                 1   3   3   1
+ *                               1   4   6   4   1
+ *                             1   5  10  10   5   1
+ *                           1   6  15  20  15   6   1
  *
  * However, if we check the first one hundred rows, we will find that only 2361 of the 5050 entries are not divisible by 7.
  *
@@ -52,7 +52,7 @@ const BigNumber = require('bignumber.js');
  * I really don't grok it.
  *
  */
-const euler148 = 'euler148';
+const problemName = 'euler148';
 
 const triangular = n => (n+1)*n/2;
 
@@ -138,8 +138,11 @@ const solveSLOWWWWWW = n => {
   return notDivisible;
 }
 
-module.exports = {solve};
+module.exports = {
+  problemName,
+  solve
+};
 
-console.log(solve(100));
-console.log(solve(10**9)); // 2129970655314432
+// console.log(solve(100));
+// console.log(solve(10**9)); // 2129970655314432
 

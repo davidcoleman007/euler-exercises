@@ -17,10 +17,11 @@
  *
  * time : 3 mins to copy data, create txt file and type the few lines below.
  */
-const euler67='euler67';
+const problemName='euler67';
 
 const {solve} = require ('./euler-18');
 
-module.exports = {solve};
-
-console.log(solve('euler-67.txt'));
+module.exports = {
+  problemName,
+  solve
+};

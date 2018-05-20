@@ -10,6 +10,7 @@
  *
  * this exercise took me ~ 10 mins
  */
+const problemName = 'euler4';
 
 const isAPal = str => {
   const chars = str.split('');
@@ -65,14 +66,17 @@ const largestPalindromeProduct = n => {
 }
 
 const solve = n => {
-  console.log(`solving https://projecteuler.net/problem=4 for ${n} digits`);
+  // console.log(`solving https://projecteuler.net/problem=4 for ${n} digits`);
   const start = (new Date()).getTime();
   const product = largestPalindromeProduct(n);
   const end = (new Date()).getTime();
   const duration = end - start;
-  console.log(product);
-  console.log(`time elapsed: ${duration} ms`);
+  // console.log(product);
+  // console.log(`time elapsed: ${duration} ms`);
   return product;
 }
 
-module.exports = {solve};
+module.exports = {
+  problemName,
+  solve
+};

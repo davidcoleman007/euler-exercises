@@ -31,7 +31,7 @@
  * time spent < 30 mins
  *
  */
-const euler102 = 'euler102';
+const problemName = 'euler102';
 const fs = require('fs');
 const path = require('path');
 
@@ -76,4 +76,7 @@ const solve = (fname = 'triangles.txt') => {
   return doNotContain;
 };
 
-module.exports={solve};
+module.exports = {
+  problemName,
+  solve
+};

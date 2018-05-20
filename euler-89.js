@@ -22,7 +22,7 @@
  *
  * this exercise took me ~ 1hr
  */
-const euler89 = 'euler89';
+const problemName = 'euler89';
 
 const fs = require('fs');
 const path = require('path');
@@ -117,9 +117,6 @@ const romanToNumber = rom => {
   return number;
 }
 
-// console.log(toRoman(1999));
-// console.log(romanToNumber(toRoman(1999)));
-
 const solve = (fileName='roman.txt') => {
   const data = fs.readFileSync(path.join(__dirname,`/${fileName}`));
   const vals = data.toString().split('\n');
@@ -134,6 +131,7 @@ const solve = (fileName='roman.txt') => {
 }
 
 module.exports = {
+  problemName,
   romanToNumber,
   toRoman,
   solve

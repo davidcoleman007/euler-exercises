@@ -100,7 +100,7 @@ describe('euler89',
       done();
     });
     it('correctly solves the example data set', (done) => {
-      const solution = euler89.solve();
+      const solution = euler89.solve('roman-test.txt');
       assert.equal(solution, 743);
       done();
     });

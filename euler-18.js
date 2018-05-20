@@ -48,7 +48,7 @@
  *
  * === 3:04 Euler 67 also done
  */
-const euler18='euler18';
+const problemName='euler18';
 
 const fs = require('fs');
 const path = require('path');
@@ -110,4 +110,7 @@ const solve = (fName = TEST_DATA_FILE) => {
   return solution;
 }
 
-module.exports = {solve};
+module.exports = {
+  problemName,
+  solve
+};
