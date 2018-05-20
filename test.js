@@ -4,6 +4,8 @@ var it = mocha.it
 var assert = require('chai').assert
 
 const euler4 = require('./euler-4');
+const euler18 = require('./euler-18');
+const euler67 = require('./euler-67');
 const euler89 = require('./euler-89');
 const euler102 = require('./euler-102');
 const euler148 = require('./euler-148');
@@ -28,6 +30,50 @@ describe('euler4',
       assert.sameOrderedMembers(solution, [91,99, 9009]);
       done();
     })
+  }
+);
+
+describe('euler18',
+  () => {
+    it('has a function solve', (done) => {
+      assert.isFunction(euler18.solve, 'solve is not a function');
+      done();
+    });
+    it('correctly runs in under 1 min', (done) => {
+      const start=(new Date()).getTime();
+      const solution = euler18.solve('euler-18.txt');
+      const end=(new Date()).getTime();
+      const duration = (end-start)/1000/60;
+      assert.isBelow(duration, 1);
+      done();
+    });
+    it('correctly solves the example data set', (done) => {
+      const solution = euler18.solve();
+      assert.equal(solution, 23);
+      done();
+    });
+  }
+);
+
+describe('euler67',
+  () => {
+    it('has a function solve', (done) => {
+      assert.isFunction(euler67.solve, 'solve is not a function');
+      done();
+    });
+    it('correctly runs in under 1 min', (done) => {
+      const start=(new Date()).getTime();
+      const solution = euler67.solve('euler-67.txt');
+      const end=(new Date()).getTime();
+      const duration = (end-start)/1000/60;
+      assert.isBelow(duration, 1);
+      done();
+    });
+    it('correctly solves the example data set', (done) => {
+      const solution = euler67.solve();
+      assert.equal(solution, 23);
+      done();
+    });
   }
 );
 
