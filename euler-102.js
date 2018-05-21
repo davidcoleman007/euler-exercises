@@ -7,7 +7,7 @@
  *   https://www.mathopenref.com/coordtrianglearea.html
  * (for calculating the area of a triangle).
  *
- * This is an old problem: a point is outside a triangle if the 3 triangles comprised of that point and the line segments of the
+ * This is an old problem (from my flash days) a point is outside a triangle if the 3 triangles comprised of that point and the line segments of the
  * test triangle sum to > the area of the test triangle.
  *
  * ------------------- problem statement: -----------------------

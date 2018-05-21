@@ -20,6 +20,8 @@
  *
  * Note: You can assume that all the Roman numerals in the file contain no more than four consecutive identical units.
  *
+ * I choose this problem because it is a classic
+ *
  * this exercise took me ~ 1hr
  */
 const problemName = 'euler89';
