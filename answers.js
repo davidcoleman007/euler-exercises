@@ -21,6 +21,9 @@ const euler4text = `
 * from the product of two 2-digit numbers is 9009 = 91 × 99.
 *
 * Find the largest palindrome made from the product of two 3-digit numbers.
+*
+* reason for choosing this problem: It looks fun :) "isAPal" was just too fun of a function name to NOT write it up! :P
+*
 `;
 
 console.log(
@@ -125,6 +128,8 @@ const euler89txt = `
 *
 * Note: You can assume that all the Roman numerals in the file contain no more than four consecutive identical units.
 *
+* I choose this problem because it is a classic
+*
 * this exercise took me ~ 1hr
 `;
 
@@ -151,6 +156,10 @@ const euler102txt = `
 * "random" triangles, find the number of triangles for which the interior contains the origin.
 *
 * NOTE: The first two examples in the file represent the triangles in the example given above.
+*
+* I chose this because:
+* This is an old problem (from my flash days) a point is outside a triangle if the 3 triangles comprised of that point and the line segments of the
+* test triangle sum to > the area of the test triangle.
 *
 `;
 
@@ -179,6 +188,7 @@ const euler148txt = `
 *
 * I chose this problem because I wanted to pick a problem > 100 and I want to see if I can do it :P  Since Pascal was one
 * of the first languages I learned back when I was about 14 yrs old, it seemed like a fun choice.
+*
 `;
 
 console.log(
